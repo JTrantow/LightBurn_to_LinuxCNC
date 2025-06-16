@@ -1,0 +1,45 @@
+/*!
+        \file mainPage.dox	
+        \brief This file contains the doxygen mainpage for the python user interface.
+        
+        Having this in a separate file allows the documentation to be updated without changing a code file.
+                
+        \mainpage LinuxCNC 
+                        
+        \section features_section Features
+                
+        \section toDo_section ToDo 
+                
+        \section ref_section References
+
+        \section Overall Strategy
+*/
+/*!
+    \addtogroup strategy
+
+    \dot 
+    digraph {
+        concentrate=true
+        rankdir="LR"
+        label="LB to LCNC Overview"
+
+        
+        subgraph cluster_LB {
+            label="LightBurn";
+            device [label="device" shape="rect"];
+        }
+
+        subgraph cluster_LCNC {
+            label="LinuxCNC";
+            UI [shape="rect" label="Python"]
+            NML [shape="rect" label="NML"]
+            UI -> NML [dir="both"]
+        }
+        
+        n0 [shape="point" style="invis"];
+        device -> UI [dir="both" label="TCP"]
+    }  
+    
+    \enddot
+*/
+
