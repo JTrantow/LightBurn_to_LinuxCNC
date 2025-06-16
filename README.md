@@ -10,6 +10,13 @@ This project is intended to provide a LinuxCNC UI written in Python that can act
 
 ## LB functionality
   LB has a nice interface and set of UI features well honed to laser cutting.
+  The device features have been undergoing some changes favorable to this effort. 
+  Options exists for setting the flavor of gcode (LinuxCNC), custom g-code options, and device IP/TCP settings.
+
+  I have also setup a 3d printer as a laser running Marlin FW. 
+  Using this setup is what convinced me to embark on this project.
+  I used the LB debug communications window to watch the commands go by.
+  
 - Homing (G28 Marlin FW)
 - WorkSpace location (G92/G54)
 - Laser offsets
