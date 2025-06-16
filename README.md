@@ -28,6 +28,8 @@ This project is intended to provide a LinuxCNC UI written in Python that can act
 On the LCNC side, python will be act as a TCP server between LB and LCMC NML (command, status, error). 
 Ideally, this UI will function in limited conjuction with an existing LCNC UI. 
 
+https://linuxcnc.org/docs/html/config/python-interface.html
+
 
 ## Other
 For a F360 Post processor that works with LCNC laser limited to cutting, see https://github.com/JTrantow/LinuxCNC-F360-Cutting-Post-Processor
